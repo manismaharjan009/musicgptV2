@@ -20,6 +20,88 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Docker Setup
+
+This project includes Docker configuration for both development and production environments.
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+
+### Quick Start with Docker
+
+#### Production Build
+
+```bash
+# Build and run production container
+npm run docker:build
+npm run docker:run
+
+# Or use docker-compose
+npm run docker:prod
+```
+
+#### Development with Hot Reload
+
+```bash
+# Run development container with hot reload
+npm run docker:dev
+```
+
+#### Stop Containers
+
+```bash
+npm run docker:stop
+```
+
+### Manual Docker Commands
+
+#### Production
+
+```bash
+# Build the image
+docker build -t demo-assessment .
+
+# Run the container
+docker run -p 3000:3000 demo-assessment
+```
+
+#### Development
+
+```bash
+# Build and run development container
+docker build -f Dockerfile.dev -t demo-assessment-dev .
+docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules demo-assessment-dev
+```
+
+#### Using Docker Compose
+
+```bash
+# Production
+docker-compose up app
+
+# Development (with hot reload)
+docker-compose --profile dev up dev
+
+# Stop all services
+docker-compose down
+```
+
+### Docker Configuration Files
+
+- `Dockerfile` - Multi-stage production build with optimizations
+- `Dockerfile.dev` - Development build with hot reloading
+- `docker-compose.yml` - Container orchestration for both environments
+- `.dockerignore` - Excludes unnecessary files from build context
+
+### Features
+
+- **Multi-stage builds** for smaller production images
+- **Non-root user** for security
+- **Standalone output** for optimal performance
+- **Development hot-reload** support
+- **Layer caching** optimization
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

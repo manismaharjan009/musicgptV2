@@ -10,7 +10,12 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docker:build": "docker build -t demo-assessment .",
+    "docker:run": "docker run -p 3000:3000 demo-assessment",
+    "docker:dev": "docker-compose --profile dev up dev",
+    "docker:prod": "docker-compose up app",
+    "docker:stop": "docker-compose down"
   },
   "dependencies": {
     "next": "15.4.1",
