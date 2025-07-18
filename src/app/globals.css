@@ -128,3 +128,601 @@ textarea[style*="height: auto"] {
     color: var(--foreground);
   }
 }
+
+.react-tiny-popover-container {
+  z-index: 9999;
+}
+
+/* Moving Gradient Background - Circular Pattern */
+@keyframes gradientCircle {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 0%;
+    transform: rotate(0deg);
+  }
+  25% {
+    background-position: 100% 0%;
+    transform: rotate(90deg);
+  }
+  50% {
+    background-position: 100% 100%;
+    transform: rotate(180deg);
+  }
+  75% {
+    background-position: 0% 100%;
+    transform: rotate(270deg);
+  }
+  100% {
+    background-position: 0% 0%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradientSpiral {
+  0% {
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+  25% {
+    background-position: 75% 25%;
+    background-size: 150% 150%;
+  }
+  50% {
+    background-position: 50% 50%;
+    background-size: 200% 200%;
+  }
+  75% {
+    background-position: 25% 75%;
+    background-size: 150% 150%;
+  }
+  100% {
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+}
+
+.moving-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    #00d4ff 0%,
+    #7c3aed 25%,
+    #06b6d4 50%,
+    #00d4ff 75%,
+    #7c3aed 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientCircle 20s ease-in-out infinite;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.moving-gradient-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from 0deg,
+    #00d4ff 0deg,
+    #7c3aed 120deg,
+    #06b6d4 240deg,
+    #00d4ff 360deg
+  );
+  background-size: 300% 300%;
+  animation: gradientRotate 25s linear infinite;
+  opacity: 0.05;
+}
+
+.moving-gradient-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    #00d4ff 0%,
+    transparent 30%,
+    #7c3aed 60%,
+    transparent 80%,
+    #06b6d4 100%
+  );
+  background-size: 150% 150%;
+  animation: gradientSpiral 30s ease-in-out infinite;
+  opacity: 0.03;
+}
+
+/* Popup Animations */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideInFromRight 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.slide-out {
+  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    forwards;
+}
+
+.backdrop-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Popover Slide Animations */
+@keyframes popoverSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popoverSlideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+.popover-slide-down {
+  animation: popoverSlideDown 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.popover-slide-up {
+  animation: popoverSlideUp 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+}
+
+/* Music Notes Background Animation */
+@keyframes fallNote1 {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fallNote2 {
+  0% {
+    transform: translateY(-150px) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotate(-360deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes fallNote3 {
+  0% {
+    transform: translateY(-200px) rotate(0deg) scale(1.2);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes floatNote {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+.music-note {
+  position: absolute;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(135deg, #00d4ff 0%, #7c3aed 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.4));
+}
+
+.music-note.fall-1 {
+  animation: fallNote1 8s linear infinite;
+  animation-delay: 0s;
+}
+
+.music-note.fall-2 {
+  animation: fallNote2 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.music-note.fall-3 {
+  animation: fallNote3 12s linear infinite;
+  animation-delay: 4s;
+}
+
+.music-note.float {
+  animation: floatNote 4s ease-in-out infinite;
+}
+
+.music-note:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.music-note:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+}
+.music-note:nth-child(3) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.music-note:nth-child(4) {
+  left: 40%;
+  animation-delay: 3s;
+}
+.music-note:nth-child(5) {
+  left: 50%;
+  animation-delay: 4s;
+}
+.music-note:nth-child(6) {
+  left: 60%;
+  animation-delay: 5s;
+}
+.music-note:nth-child(7) {
+  left: 70%;
+  animation-delay: 6s;
+}
+.music-note:nth-child(8) {
+  left: 80%;
+  animation-delay: 7s;
+}
+.music-note:nth-child(9) {
+  left: 90%;
+  animation-delay: 8s;
+}
+
+/* Audio Spectrum Bands Animation */
+@keyframes vibrateBand1 {
+  0%,
+  100% {
+    height: 20px;
+  }
+  25% {
+    height: 60px;
+  }
+  50% {
+    height: 40px;
+  }
+  75% {
+    height: 80px;
+  }
+}
+
+@keyframes vibrateBand2 {
+  0%,
+  100% {
+    height: 30px;
+  }
+  20% {
+    height: 70px;
+  }
+  40% {
+    height: 50px;
+  }
+  60% {
+    height: 90px;
+  }
+  80% {
+    height: 35px;
+  }
+}
+
+@keyframes vibrateBand3 {
+  0%,
+  100% {
+    height: 25px;
+  }
+  15% {
+    height: 65px;
+  }
+  30% {
+    height: 45px;
+  }
+  45% {
+    height: 85px;
+  }
+  60% {
+    height: 55px;
+  }
+  75% {
+    height: 75px;
+  }
+  90% {
+    height: 30px;
+  }
+}
+
+@keyframes vibrateBand4 {
+  0%,
+  100% {
+    height: 35px;
+  }
+  10% {
+    height: 75px;
+  }
+  25% {
+    height: 55px;
+  }
+  40% {
+    height: 95px;
+  }
+  55% {
+    height: 65px;
+  }
+  70% {
+    height: 85px;
+  }
+  85% {
+    height: 40px;
+  }
+}
+
+@keyframes vibrateBand5 {
+  0%,
+  100% {
+    height: 15px;
+  }
+  12% {
+    height: 55px;
+  }
+  28% {
+    height: 35px;
+  }
+  44% {
+    height: 75px;
+  }
+  60% {
+    height: 45px;
+  }
+  76% {
+    height: 65px;
+  }
+  92% {
+    height: 25px;
+  }
+}
+
+.audio-band {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 212, 255, 0.9) 0%,
+    rgba(124, 58, 237, 0.7) 50%,
+    rgba(6, 182, 212, 0.5) 100%
+  );
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
+}
+
+.audio-band.vibrate-1 {
+  animation: vibrateBand1 2s ease-in-out infinite;
+}
+
+.audio-band.vibrate-2 {
+  animation: vibrateBand2 1.8s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.audio-band.vibrate-3 {
+  animation: vibrateBand3 2.2s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.audio-band.vibrate-4 {
+  animation: vibrateBand4 1.6s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.audio-band.vibrate-5 {
+  animation: vibrateBand5 2.4s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fade-in-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-fade-in-scale.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-slide-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-slide-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.scroll-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.scroll-delay-5 {
+  transition-delay: 0.5s;
+}
+
+.scroll-delay-6 {
+  transition-delay: 0.6s;
+}

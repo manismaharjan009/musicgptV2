@@ -149,7 +149,7 @@ export default function ContentSection() {
   };
 
   return (
-    <div className="mx-auto w-[900px] px-[50px]">
+    <div className="mx-auto px-[50px] md:w-[900px]">
       <div className="mb-6 text-center">
         <h1 className="mb-4 text-[32px] text-white">What song to create?</h1>
       </div>

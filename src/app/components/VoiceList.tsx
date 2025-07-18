@@ -38,6 +38,7 @@ export default function VoiceList({
   );
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(initialVoices.pagination.hasNextPage);
+  const [animatedItems, setAnimatedItems] = useState<Set<string>>(new Set());
   const observer = useRef<IntersectionObserver | undefined>(undefined);
   const loadingRef = useRef<HTMLDivElement>(null);
   const isRequesting = useRef(false);
@@ -74,6 +75,34 @@ export default function VoiceList({
     }
   }, [loading, hasMore, pagination.currentPage, pagination.itemsPerPage]);
 
+  // Intersection Observer for scroll animations
+  useEffect(() => {
+    const animationObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const voiceId = entry.target.getAttribute("data-voice-id");
+            if (voiceId) {
+              setAnimatedItems(prev => new Set(prev).add(voiceId));
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: "50px",
+      }
+    );
+
+    // Observe all voice items
+    const voiceItems = document.querySelectorAll("[data-voice-id]");
+    voiceItems.forEach(item => animationObserver.observe(item));
+
+    return () => {
+      animationObserver.disconnect();
+    };
+  }, [voices]);
+
   useEffect(() => {
     // Disconnect any existing observer
     if (observer.current) {
@@ -107,6 +136,35 @@ export default function VoiceList({
     };
   }, [loading, hasMore, loadMoreVoices]);
 
+  const getAnimationClass = (index: number) => {
+    const animationTypes = [
+      "scroll-fade-in-scale",
+      "scroll-slide-left",
+      "scroll-fade-in-up",
+      "scroll-slide-right",
+      "scroll-fade-in-scale",
+      "scroll-slide-left",
+    ];
+
+    const delayClasses = [
+      "scroll-delay-1",
+      "scroll-delay-2",
+      "scroll-delay-3",
+      "scroll-delay-4",
+      "scroll-delay-5",
+      "scroll-delay-6",
+    ];
+
+    const animationType = animationTypes[index % animationTypes.length];
+    const delayClass = delayClasses[index % delayClasses.length];
+
+    return clsx(
+      animationType,
+      delayClass,
+      animatedItems.has(voices[index]?.id) && "animate"
+    );
+  };
+
   return (
     <div
       className={clsx("scrollbar-hide h-[170px] overflow-y-auto", {
@@ -114,8 +172,15 @@ export default function VoiceList({
       })}
     >
       <div className="grid grid-cols-3 items-center justify-center gap-4">
-        {voices.map(voice => (
-          <div key={voice.id} className="group cursor-pointer p-2">
+        {voices.map((voice, index) => (
+          <div
+            key={voice.id}
+            className={clsx(
+              "group cursor-pointer p-2",
+              getAnimationClass(index)
+            )}
+            data-voice-id={voice.id}
+          >
             <div className="relative mx-auto h-[46px] w-[46px]">
               <Image
                 src={voice.profile_picture}

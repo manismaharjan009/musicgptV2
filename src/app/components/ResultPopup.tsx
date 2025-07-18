@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface ResultPopupProps {
   isOpen: boolean;
@@ -25,9 +25,12 @@ export default function ResultPopup({
   data,
   isLoading = false,
 }: ResultPopupProps) {
+  const [isClosing, setIsClosing] = useState(false);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      setIsClosing(false);
     } else {
       document.body.style.overflow = "unset";
     }
@@ -37,24 +40,33 @@ export default function ResultPopup({
     };
   }, [isOpen]);
 
-  if (!isOpen || !data) return null;
+  const handleClose = () => {
+    setIsClosing(true);
+    // Wait for animation to complete before actually closing
+    setTimeout(() => {
+      onClose();
+      setIsClosing(false);
+    }, 400); // Match the slide-out animation duration
+  };
 
   const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
-      onClose();
+      handleClose();
     }
   };
+
+  if (!isOpen || !data) return null;
 
   return (
     <>
       <div
-        className="fixed inset-0 z-40 bg-transparent"
+        className="backdrop-fade-in fixed inset-0 z-40 bg-black/20 backdrop-blur-sm"
         onClick={handleBackdropClick}
       />
 
       <div
-        className={`fixed top-20 right-5 z-50 h-full w-80 transform transition-all duration-1000 ease-out ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        className={`fixed top-20 right-5 z-50 h-full w-80 ${
+          isClosing ? "slide-out" : "slide-in"
         }`}
       >
         <div className="h-auto w-full rounded-2xl border border-l border-white/10 bg-black/20 shadow-2xl backdrop-blur-xl">
@@ -128,7 +140,7 @@ export default function ResultPopup({
 
             <div className="border-t border-white/10 p-6">
               <button
-                onClick={onClose}
+                onClick={handleClose}
                 className="w-full rounded-lg border border-white/10 bg-white/10 px-4 py-3 font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
               >
                 Close
