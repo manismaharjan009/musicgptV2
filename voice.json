@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "id": "e0bf25fe-af2a-4b7a-848c-dbd300e30b01",
+      "created_at": "2025-05-10T14:43:15.777Z",
+      "voice_id_api": "j76a6k72nv",
+      "voice_name": "TikTok Male Voice",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/a3511226-7c54-42b7-b832-ddb8433e68df.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/j76a6k72nv/Tik Tok Male Voice.mp3"
+    },
+    {
+      "id": "46a48383-d984-4d3e-ab9c-fdf1b8e492a7",
+      "created_at": "2025-04-19T09:30:04.831Z",
+      "voice_id_api": "k8spxsrehx",
+      "voice_name": "David Attenborough",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/David Attenborough AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/k8spxsrehx/David Attenborough Sample 2.mp3"
+    },
+    {
+      "id": "152dee40-9628-4ea8-b09e-62cbe6d9dba9",
+      "created_at": "2025-05-09T13:02:51.221Z",
+      "voice_id_api": "qhr83jrv74",
+      "voice_name": "TikTok Male Narrator",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/ChatGPT Image May 9, 2025, 02_00_40 PM.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/qhr83jrv74/Tik Tok Narrator.mp3"
+    },
+    {
+      "id": "1dcf38b8-19ad-4643-9535-93152488b6c2",
+      "created_at": "2025-05-09T12:04:56.806Z",
+      "voice_id_api": "ftxbcv84ky",
+      "voice_name": "Theo Von",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/ChatGPT Image May 9, 2025, 01_04_38 PM.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/ftxbcv84ky/Theo Von TTS.mp3"
+    },
+    {
+      "id": "655df437-cdb4-4bcc-9b6b-5183e0a2bb62",
+      "created_at": "2025-04-19T05:32:55.407Z",
+      "voice_id_api": "qb8m5f6sgb",
+      "voice_name": "TikTok Male Voice",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Elevenlabs Adam AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/qb8m5f6sgb/tiktok male voice.mp3"
+    },
+    {
+      "id": "ea8f31a0-7a9f-4077-84af-dba92113c6a4",
+      "created_at": "2025-04-19T05:52:22.471Z",
+      "voice_id_api": "h4vmgpgunv",
+      "voice_name": "News Reporter",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/News Anchor AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/h4vmgpgunv/Reporter.mp3"
+    },
+    {
+      "id": "57486e07-2cf2-4a45-99b7-5235ed92d4b6",
+      "created_at": "2025-05-10T15:05:28.196Z",
+      "voice_id_api": "n9hk446er3",
+      "voice_name": "Documentary Voice Male",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/May 10, 2025, 04_05_15 PM.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/n9hk446er3/Documentary Voice Male.mp3"
+    },
+    {
+      "id": "fdf6319b-05bb-47c4-9870-921b2064e6da",
+      "created_at": "2025-05-09T13:18:27.449Z",
+      "voice_id_api": "u4ewkys3aa",
+      "voice_name": "TikTok Female Narrator",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/May 9, 2025, 02_17_09 PM.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/u4ewkys3aa/Female gesserit.co tts (2).mp3"
+    },
+    {
+      "id": "1aef601a-8814-4eaf-954b-9f0777dc93b6",
+      "created_at": "2025-05-10T13:56:34.686Z",
+      "voice_id_api": "yfyyxj9tn8",
+      "voice_name": "Female Narrator",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/36b2beaa-53c9-4726-8b80-87ae96cf4688.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/yfyyxj9tn8/Female Narrator.mp3"
+    },
+    {
+      "id": "f71d9315-3793-47ee-909c-97beac169acf",
+      "created_at": "2025-04-25T04:18:03.943Z",
+      "voice_id_api": "etgat35eye",
+      "voice_name": "ASMR Male",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/ASMR AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/etgat35eye/ASMR Sample.wav"
+    },
+    {
+      "id": "8a6f406f-b713-4eb1-a352-859233c65044",
+      "created_at": "2025-04-08T08:22:47.234Z",
+      "voice_id_api": "y8bg492q9r",
+      "voice_name": "MrBeast",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/MrBeast AI 2.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/y8bg492q9r/MrBeast Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "99c7f300-8ce5-455c-94a0-098ec10d8ffc",
+      "created_at": "2025-04-21T06:42:27.423Z",
+      "voice_id_api": "nrcbqjf2tt",
+      "voice_name": "Cara Delevingne",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Cara Delevingne AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/nrcbqjf2tt/Cara Delevingne Sample.mp3"
+    },
+    {
+      "id": "08d97d1e-21cd-4c28-9a59-fed29cc1321d",
+      "created_at": "2025-05-09T11:50:24.537Z",
+      "voice_id_api": "nknnmev3j5",
+      "voice_name": "Neil deGrasse Tyson",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Neil deGrasse Tyson.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/nknnmev3j5/Scientist tts.mp3"
+    },
+    {
+      "id": "0b5c6c68-532b-4fe0-90b6-aee39ef8729c",
+      "created_at": "2025-04-25T04:01:17.214Z",
+      "voice_id_api": "vtxb2ajn6q",
+      "voice_name": "Anime Teenager Male",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Teenager (Male) AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/vtxb2ajn6q/Teenage Voice (Male).wav"
+    },
+    {
+      "id": "4ffc412e-94be-4abe-bd37-a64db39e6ca1",
+      "created_at": "2024-06-27T12:38:08.488Z",
+      "voice_id_api": "YoungMichaelJackson",
+      "voice_name": "Young Michael Jackson",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Young Michael  Jackson AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/YoungMichaelJackson/Young Michael Jackson Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "93fee2dd-0f76-4ae0-8e84-5b4ab5b31725",
+      "created_at": "2025-05-09T10:47:18.651Z",
+      "voice_id_api": "y73wxvm5k2",
+      "voice_name": "Logan Paul",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Logan Paul.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/y73wxvm5k2/Logan Paul tts voice sample.mp3"
+    },
+    {
+      "id": "26088041-fa27-4e24-921c-e21603c49c04",
+      "created_at": "2023-10-01T18:10:12.000Z",
+      "voice_id_api": "Drake",
+      "voice_name": "Drake",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Drake-AI2.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/Drake/Drake.wav"
+    },
+    {
+      "id": "133afe05-4e6a-44a5-a203-d415aab7df9e",
+      "created_at": "2025-05-09T13:55:30.629Z",
+      "voice_id_api": "ufdtyae4vm",
+      "voice_name": "Female Spoken Word",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/ChatGPT Image May 9, 2025, 02_54_53 PM.png",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/ufdtyae4vm/HEATHER_vocal_spoken_wet_sweat_128.wav"
+    },
+    {
+      "id": "f1fefdd9-ba08-402f-ad57-4cc768a40349",
+      "created_at": "2025-02-26T12:17:24.557Z",
+      "voice_id_api": "au97budf78",
+      "voice_name": "Michael Jackson",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Michael Jackson AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/au97budf78/Michael Jackson Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "7ef6844f-2d62-403b-a47a-4b79cc7b713d",
+      "created_at": "2024-06-23T02:21:51.128Z",
+      "voice_id_api": "JustinBieber",
+      "voice_name": "Justin Bieber",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Justin Bieber AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/JustinBieber/Justin Bieber Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "2cbff5bb-5448-415b-9f3e-87cc16ccfd74",
+      "created_at": "2025-03-17T08:08:38.599Z",
+      "voice_id_api": "gxk66ka6cp",
+      "voice_name": "Donald Trump",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Donald Trump AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/gxk66ka6cp/Donald Trump Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "66cf9ae4-09cf-4df0-b65a-300191bb5aec",
+      "created_at": "2024-07-01T05:53:14.167Z",
+      "voice_id_api": "TaylorSwift",
+      "voice_name": "Taylor Swift",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Taylor Swift AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/TaylorSwift/Taylor Swift.wav"
+    },
+    {
+      "id": "ab186086-1428-496a-bbae-215612120ddd",
+      "created_at": "2024-07-10T04:47:09.165Z",
+      "voice_id_api": "abbc5022-4a02-4394-827c-6965c81c9411",
+      "voice_name": "David Bowie",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/David Bowie AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/abbc5022-4a02-4394-827c-6965c81c9411/David Bowie Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "bd085997-6de5-402a-8f3e-70805e3d8b91",
+      "created_at": "2024-07-23T06:48:58.067Z",
+      "voice_id_api": "019cee78-c1d4-4770-889a-47e6d36386a6",
+      "voice_name": "Kurt Cobain",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_Kurt_Cobain_real_portrait_.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/019cee78-c1d4-4770-889a-47e6d36386a6/Kurt Cobain Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "4c68a378-d17d-4065-b9f8-4749c89a7e96",
+      "created_at": "2024-07-02T17:26:31.251Z",
+      "voice_id_api": "0ac4649c-68da-4ddc-b402-f49c26c9bc5d",
+      "voice_name": "Adele",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_Adele_real_portrait_with_w.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/0ac4649c-68da-4ddc-b402-f49c26c9bc5d/Adele.wav"
+    },
+    {
+      "id": "967bc7ff-abec-444a-bca1-327ec5179a43",
+      "created_at": "2024-07-08T08:46:45.018Z",
+      "voice_id_api": "746a998c-bb1b-4664-9485-612f873ffac3",
+      "voice_name": "Paul McCartney",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_Paul_McCartney_real_portra.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/746a998c-bb1b-4664-9485-612f873ffac3/Paul McCartney Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "599b208f-93fc-44e3-a8de-7b3887794d51",
+      "created_at": "2024-07-01T08:04:38.932Z",
+      "voice_id_api": "c706b9e8-7c65-4e26-b4fe-bf13e67e975c",
+      "voice_name": "Jungkook",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_Jungkook_real_portrait_whi.jpg",
+      "language": "KOREAN",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/c706b9e8-7c65-4e26-b4fe-bf13e67e975c/Jungkook Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "99085ea9-4dd8-48c3-bfff-4bf7ead24c0c",
+      "created_at": "2024-07-02T07:31:35.548Z",
+      "voice_id_api": "9ab0bec4-f83f-461d-8055-478a7033a558",
+      "voice_name": "V",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_V_from_BTS_real_portrait_w.jpg",
+      "language": "KOREAN",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/9ab0bec4-f83f-461d-8055-478a7033a558/V Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "c1a6dda5-05f6-4c0d-9686-57e146ded467",
+      "created_at": "2024-06-27T14:13:18.388Z",
+      "voice_id_api": "CharliePuth",
+      "voice_name": "Charlie Puth",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Charlie Puth AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/CharliePuth/Charlie Puth Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "0135ea9a-c7a5-488b-8ecc-8c39378b890a",
+      "created_at": "2024-06-22T17:11:36.215Z",
+      "voice_id_api": "WhitneyHouston",
+      "voice_name": "Whitney Houston",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Whitney Houston AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/WhitneyHouston/Whitney Houston Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "6f0de919-f896-49ee-835f-fb945756b357",
+      "created_at": "2024-06-21T16:28:49.113Z",
+      "voice_id_api": "TravisScott",
+      "voice_name": "Travis Scott",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Travis Scott AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/TravisScott/Travis Scott Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "6d7a58e3-e69c-4452-a321-cb10b768e004",
+      "created_at": "2024-07-01T08:33:25.697Z",
+      "voice_id_api": "6e35e4b4-7cbc-49b9-8837-2ba46ed0ddac",
+      "voice_name": "Lisa",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/jo69a_Lisa_from_BlackPink_real_p (1).jpg",
+      "language": "KOREAN",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/6e35e4b4-7cbc-49b9-8837-2ba46ed0ddac/Lisa Smple Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "f7fb6883-e434-4acb-a941-53a8a90e95f9",
+      "created_at": "2024-07-01T05:44:09.928Z",
+      "voice_id_api": "PewDiePie",
+      "voice_name": "PewDiePie",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/PewDiePie AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/PewDiePie/PewDiePie Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "40fab8f7-8555-48a7-be96-e357237296c9",
+      "created_at": "2024-07-26T13:54:45.626Z",
+      "voice_id_api": "e5bcb752-4e28-4142-b2b0-5a73a43b040b",
+      "voice_name": "Andrea Bocelli",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Andrea Bocelli AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/e5bcb752-4e28-4142-b2b0-5a73a43b040b/Andrea Bocelli Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "4025bd17-0aa2-4af3-8e67-4d2531589dea",
+      "created_at": "2024-06-29T12:41:29.811Z",
+      "voice_id_api": "MariahCarey",
+      "voice_name": "Mariah Carey",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Mariah Carey AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/MariahCarey/Mariah Carey Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "3e57bc45-0a74-4db0-b9bf-69b8fca8310e",
+      "created_at": "2024-07-07T12:12:49.882Z",
+      "voice_id_api": "221ea86d-58a2-4a76-8642-d2b9cebd5c73",
+      "voice_name": "Phil Collins",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Phil Collins AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/221ea86d-58a2-4a76-8642-d2b9cebd5c73/Phil Collins Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "7560d5d3-a8f2-4147-aeb1-83c9969de22c",
+      "created_at": "2024-07-27T06:03:15.137Z",
+      "voice_id_api": "0a48bb24-995d-4f7b-913c-6a46882b1931",
+      "voice_name": "Lizzo",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Lizzo AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/0a48bb24-995d-4f7b-913c-6a46882b1931/Lizzo Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "adbbad1c-c976-4b68-a71a-587852e67ea0",
+      "created_at": "2024-06-29T16:15:07.560Z",
+      "voice_id_api": "HarryStyles",
+      "voice_name": "Harry Styles",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Harry Styles AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/HarryStyles/Harry Styles Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "344bc9c6-6a84-437a-873c-d763e0799e1b",
+      "created_at": "2024-07-10T08:28:32.543Z",
+      "voice_id_api": "79518090-2082-4c06-b43c-534f46a852c3",
+      "voice_name": "John Legend",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/John Legend AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/79518090-2082-4c06-b43c-534f46a852c3/John Legend Sample Audio-enhanced-v2.wav"
+    },
+    {
+      "id": "61433160-7c92-414f-a25c-57322fbc4481",
+      "created_at": "2024-07-27T11:09:01.573Z",
+      "voice_id_api": "9e4238d7-c897-4ac8-9864-2da952520820",
+      "voice_name": "Bon Jovi",
+      "profile_picture": "https://lalals.s3.amazonaws.com/images/Bon Jovi AI.jpg",
+      "language": "ENGLISH",
+      "sample_audio_file": "https://lalals.s3.amazonaws.com/sample-audio-files/9e4238d7-c897-4ac8-9864-2da952520820/Bon Jovi Sample Audio-enhanced-v2.wav"
+    }
+  ]
+}
