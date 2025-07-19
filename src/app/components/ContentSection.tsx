@@ -244,7 +244,10 @@ export default function ContentSection() {
           </div>
 
           <div className="flex items-center justify-between gap-2">
-            <PopoverButton onOptionSelect={handleOptionSelect} />
+            <PopoverButton
+              onOptionSelect={handleOptionSelect}
+              selectedOption={selectedOption}
+            />
             <button
               className={clsx(
                 "flex h-9 w-9 items-center gap-2 rounded-[18px] bg-white p-1.5 text-white transition-colors",

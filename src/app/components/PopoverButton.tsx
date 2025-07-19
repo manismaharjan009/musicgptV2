@@ -34,9 +34,13 @@ const TOOL_OPTIONS: ToolOptionData[] = [
 
 interface PopoverButtonProps {
   onOptionSelect: (option: ToolOption) => void;
+  selectedOption: ToolOption;
 }
 
-export default function PopoverButton({ onOptionSelect }: PopoverButtonProps) {
+export default function PopoverButton({
+  onOptionSelect,
+  selectedOption,
+}: PopoverButtonProps) {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
@@ -81,7 +85,7 @@ export default function PopoverButton({ onOptionSelect }: PopoverButtonProps) {
             {TOOL_OPTIONS.map(option => (
               <div
                 key={option.id}
-                className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-[#0003]"
+                className="relative flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-[#0003]"
                 onClick={() => handleOptionSelect(option.id)}
               >
                 <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#252a2d]">
@@ -98,6 +102,17 @@ export default function PopoverButton({ onOptionSelect }: PopoverButtonProps) {
                     {option.description}
                   </span>
                 </div>
+                {option.id === selectedOption && (
+                  <span className="absolute top-5 right-3 h-5 w-5 rounded-full bg-white p-[3px]">
+                    <Image
+                      src="/svg/icon-tick-white.svg"
+                      alt="Instrumental"
+                      width={15}
+                      height={15}
+                      className="invert filter"
+                    />
+                  </span>
+                )}
               </div>
             ))}
           </div>
